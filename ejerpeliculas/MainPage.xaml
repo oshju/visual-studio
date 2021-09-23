@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejerpeliculas.MainPage">
+
+    <StackLayout>
+        <Label Text="Peliculas" 
+                   FontSize="50" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"/> 
+            <Picker x:Name="controlpicker" 
+                    VerticalOptions="CenterAndExpand" 
+                    Title="destino de caballero"/>
+      
+            <Label x:Name="lblseleccionado" 
+                   FontSize="Large" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center"/>
+
+        <ScrollView>
+        <StackLayout Orientation="Vertical" >
+
+        <Image x:Name="imgPeli" Source="amanecer.jpg" BackgroundColor="Aqua"  HorizontalOptions="Center"  Margin="30,20,50,0">   </Image>
+
+
+            <Label x:Name="distribuidor" Text="{Binding distribuidor}" FontSize="Large" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center" />
+            <Label x:Name="precio" Text="{Binding precio}" FontSize="Large" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center"/>
+            <Label x:Name="director" Text="{Binding director}" FontSize="Large" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center"/>
+            <Label x:Name="actores" Text="{Binding actores}" FontSize="Large" VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="Center"/>
+                </StackLayout>
+
+            </ScrollView>
+    </StackLayout>
+
+</ContentPage>
+    
